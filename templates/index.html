@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetLink Canine Distemper Center</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <h1 onclick="window.location.href='/'">🐾 PetLink</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <div class="nav-buttons" id="navButtons">
+      <!-- Dynamic buttons will be inserted here -->
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Smart Pet Care Starts Here</h2>
+      <p>Monitor, manage, and protect your pets with intelligent recommendations.</p>
+      <button class="btn" id="heroCtaBtn" onclick="handleHeroCta()">
+        Get Started
+      </button>
+    </div>
+
+    <!-- HERO VISUAL -->
+    <div class="hero-visual">
+      <div class="dashboard-preview">
+        <div class="preview-header">
+          <div class="preview-dot"></div>
+          <div class="preview-dot"></div>
+          <div class="preview-dot"></div>
+        </div>
+        <div class="preview-body">
+          <div class="preview-stat-row">
+            <div class="preview-stat"><div class="num">145</div><div class="lbl">Customers</div></div>
+            <div class="preview-stat"><div class="num">267</div><div class="lbl">Pets</div></div>
+            <div class="preview-stat"><div class="num">94%</div><div class="lbl">Healthy</div></div>
+          </div>
+          <div class="preview-pets">
+            <div class="preview-pet">
+              <div class="preview-pet-icon" style="background:rgba(56,189,248,0.2)">🐕</div>
+              <div class="preview-pet-info">
+                <div class="preview-pet-name">Buddy — Labrador</div>
+                <div class="preview-pet-sub">3 yrs • High Activity</div>
+              </div>
+              <div class="preview-badge">Healthy</div>
+            </div>
+            <div class="preview-pet">
+              <div class="preview-pet-icon" style="background:rgba(255,107,107,0.2)">🐈</div>
+              <div class="preview-pet-info">
+                <div class="preview-pet-name">Luna — Siamese</div>
+                <div class="preview-pet-sub">2 yrs • Needs Vaccine</div>
+              </div>
+              <div class="preview-badge">Warning</div>
+            </div>
+            <div class="preview-pet">
+              <div class="preview-pet-icon" style="background:rgba(244,197,66,0.2)">🐕</div>
+              <div class="preview-pet-info">
+                <div class="preview-pet-name">Max — German Shepherd</div>
+                <div class="preview-pet-sub">5 yrs • Under Treatment</div>
+              </div>
+              <div class="preview-badge">Attention</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="card">
+      <h3>🐕 Pet Profiles</h3>
+      <p>Manage your pets' health records, vaccination history, and medical information in one place.</p>
+    </div>
+    <div class="card">
+      <h3>🤖 AI Recommendations</h3>
+      <p>Receive smart care suggestions using machine learning algorithms tailored to your pet.</p>
+    </div>
+    <div class="card">
+      <h3>⏰ Smart Reminders</h3>
+      <p>Get automatic alerts for vaccination schedules, grooming appointments, and check-ups.</p>
+    </div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <div class="stats">
+    <div class="stat-item">
+      <div class="stat-number">2,500+</div>
+      <div class="stat-label">Happy Pets</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">98%</div>
+      <div class="stat-label">Satisfaction Rate</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">24/7</div>
+      <div class="stat-label">Support Available</div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-content">
+      <h2>About PetLink</h2>
+      <p>PetLink is a comprehensive pet management platform designed to help pet owners and veterinarians track health records, schedule vaccinations, and receive AI-powered recommendations for optimal pet care. Join thousands of happy pet owners who trust PetLink for their furry friends' wellbeing.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 PetLink Canine Distemper Center | All Rights Reserved | Secure Pet Care Platform</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
